@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Love Cafe and Restaurant</title>
+
+<style>
+
+html{scroll-behavior:smooth;}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{
+font-family:'Segoe UI',sans-serif;
+background:#FFF8F2;
+color:#222;
+}
+
+/* HEADER */
+header{
+background:#7A1C1C;
+padding:20px 10%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+color:white;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 18px;
+font-size:18px;
+}
+
+.call{
+background:#D4A24C;
+padding:12px 25px;
+border-radius:6px;
+color:black;
+font-weight:bold;
+}
+
+/* HERO */
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=1200") center/cover;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:60px;
+margin-bottom:15px;
+}
+
+.hero p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+background:#D4A24C;
+padding:14px 30px;
+margin:10px;
+text-decoration:none;
+color:black;
+border-radius:8px;
+font-size:18px;
+}
+
+/* SECTION */
+.section{
+padding:100px 10%;
+text-align:center;
+}
+
+.section h2{
+font-size:42px;
+margin-bottom:10px;
+}
+
+.section p{
+font-size:18px;
+color:#555;
+}
+
+/* MENU GRID */
+.menu-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:35px;
+margin-top:50px;
+}
+
+.menu-item{
+background:white;
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 8px 25px rgba(0,0,0,0.1);
+transition:0.3s;
+}
+
+.menu-item:hover{
+transform:translateY(-10px);
+}
+
+.menu-item img{
+width:100%;
+height:230px;
+object-fit:cover;
+}
+
+/* MENU CONTENT */
+.menu-content{
+padding:15px 20px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+/* PRO PRICE TAG */
+.price{
+background:linear-gradient(45deg,#D4A24C,#FFD27F);
+color:black;
+padding:7px 16px;
+border-radius:30px;
+font-weight:bold;
+font-size:14px;
+box-shadow:0 6px 15px rgba(0,0,0,0.25);
+transition:0.3s;
+}
+
+.menu-item:hover .price{
+transform:scale(1.1);
+}
+
+/* REVIEWS */
+.reviews{
+background:#f3f3f3;
+}
+
+.review{
+background:white;
+margin:25px auto;
+max-width:700px;
+padding:30px;
+border-radius:10px;
+font-size:18px;
+}
+
+/* MAP */
+.map{
+padding:100px 10%;
+}
+
+iframe{
+width:100%;
+height:400px;
+border-radius:10px;
+}
+
+/* WHATSAPP */
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:18px 22px;
+border-radius:50px;
+font-size:18px;
+text-decoration:none;
+}
+
+/* FOOTER */
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:60px 10%;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+<div class="logo">Love Cafe and Restaurant</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#menu">Menu</a>
+<a href="#about">About</a>
+<a href="#reviews">Reviews</a>
+<a href="#contact">Contact</a>
+</nav>
+
+<a class="call" href="tel:9821588074">Call Now</a>
+</header>
+
+<section id="home" class="hero">
+<div>
+<h1>Authentic Taste. Warm Family Dining.</h1>
+<p>Enjoy delicious Nepali and Indian food in Kapilvastu</p>
+<a class="btn" href="#menu">View Menu</a>
+</div>
+</section>
+
+<section id="menu" class="section">
+
+<h2>Our Menu</h2>
+<p>Fresh, tasty and loved by everyone</p>
+
+<div class="menu-grid">
+
+<!-- TEA & COFFEE -->
+<div class="menu-item"><img src="images/milk tea.jpg"><div class="menu-content"><h3>Milk Tea</h3><div class="price">Rs. 25</div></div></div>
+<div class="menu-item"><img src="images/black tea.jpg"><div class="menu-content"><h3>Black Tea</h3><div class="price">Rs. 25</div></div></div>
+<div class="menu-item"><img src="images/chai.jpg"><div class="menu-content"><h3>Matka Tea</h3><div class="price">Rs. 30</div></div></div>
+<div class="menu-item"><img src="images/Coffee.png"><div class="menu-content"><h3>Milk Coffee</h3><div class="price">Rs. 30</div></div></div>
+<div class="menu-item"><img src="images/black coffee.jpg"><div class="menu-content"><h3>Black Coffee</h3><div class="price">Rs. 40</div></div></div>
+
+<!-- EGG ITEMS -->
+<div class="menu-item"><img src="images/omelette.jpg"><div class="menu-content"><h3>Omelette(2 Egg)</h3><div class="price">Rs. 80</div></div></div>
+<div class="menu-item"><img src="images/Boiled egg fry.jpg"><div class="menu-content"><h3>Boiled Egg Fry</h3><div class="price">Rs. 30Per pcs</div></div></div>
+<div class="menu-item"><img src="images/anda buji.jpg"><div class="menu-content"><h3>Anda Curry Chura</h3><div class="price">Rs. 100</div></div></div>
+<div class="menu-item"><img src="images/anda bhurji.jpg"><div class="menu-content"><h3>Anda Bhurji</h3><div class="price">Rs. 80</div></div></div>
+
+<!-- CHICKEN ITEMS -->
+<div class="menu-item"><img src="images/chicken fry.jpg"><div class="menu-content"><h3>Chicken Fry</h3><div class="price">Rs. 240</div></div></div>
+<div class="menu-item"><img src="images/chilli-chicken-recipe.jpg"><div class="menu-content"><h3>Chicken Chilli</h3><div class="price">Rs. 300</div></div></div>
+
+<!-- CHOWMEIN -->
+<div class="menu-item"><img src="images/veg chaumin2.jpg"><div class="menu-content"><h3>Veg Chowmein</h3><div class="price">Rs. 120</div></div></div>
+<div class="menu-item"><img src="images/NON-veg chaumin.jpg"><div class="menu-content"><h3>Chicken Chowmein</h3><div class="price">Rs. 200</div></div></div>
+<div class="menu-item"><img src="images/panner chowmin.jpg"><div class="menu-content"><h3>Paneer Chowmein</h3><div class="price">Rs. 200</div></div></div>
+
+<!-- MOMO CHILLI -->
+<div class="menu-item"><img src="images/veg chilli momo.jpg"><div class="menu-content"><h3>Veg Momo Chilli</h3><div class="price">Rs. 150</div></div></div>
+<div class="menu-item"><img src="images/choicken momo chilli.jpg"><div class="menu-content"><h3>Chicken Momo Chilli</h3><div class="price">Rs. 180</div></div></div>
+<div class="menu-item"><img src="images/panner momo chilli.jpg"><div class="menu-content"><h3>Paneer Momo Chilli</h3><div class="price">Rs. 180</div></div></div>
+<div class="menu-item"><img src="images/momo.jpg"><div class="menu-content"><h3>Veg Momo</h3><div class="price">Rs. 120</div></div></div>
+<div class="menu-item"><img src="images/NON-veg momo.jpg"><div class="menu-content"><h3>Non-Momo</h3><div class="price">Rs. 200</div></div></div>
+
+<!-- ROLLS -->
+<div class="menu-item"><img src="images/chicken roll.jpg"><div class="menu-content"><h3>Chicken Roll</h3><div class="price">Rs. 200(3pcs)</div></div></div>
+<div class="menu-item"><img src="images/veg-rolls.jpg"><div class="menu-content"><h3>Veg Roll</h3><div class="price">Rs. 180</div></div></div>
+<div class="menu-item"><img src="images/panner roll2.jpg"><div class="menu-content"><h3>Paneer Roll</h3><div class="price">Rs. 200</div></div></div>
+<div class="menu-item"><img src="images/egg roll.avif"><div class="menu-content"><h3>Egg Roll</h3><div class="price">Rs. 180</div></div></div>
+
+<!-- RICE ITEMS -->
+<div class="menu-item"><img src="images/biryani.jpg"><div class="menu-content"><h3>Biryani</h3><div class="price">Rs. 300</div></div></div>
+<div class="menu-item"><img src="images/fried-ricce.jpg"><div class="menu-content"><h3>Fried Rice</h3><div class="price">Rs. 200</div></div></div>
+
+<!-- SNACKS -->
+<div class="menu-item"><img src="images/frie.jpg"><div class="menu-content"><h3>French Fries</h3><div class="price">Rs. 150</div></div></div>
+<div class="menu-item"><img src="images/pwan chips.jpg"><div class="menu-content"><h3>Prawn Chips</h3><div class="price">Rs. 120</div></div></div>
+<div class="menu-item"><img src="images/WAI-WAI-CHATPATE-800x534.jpg"><div class="menu-content"><h3>Chatpate</h3><div class="price">Rs. 100</div></div></div>
+<div class="menu-item"><img src="images/chicken chatpate.jpg"><div class="menu-content"><h3>Chicken Chatpate</h3><div class="price">Rs. 180</div></div></div>
+<div class="menu-item"><img src="images/egg chatapate.jpg"><div class="menu-content"><h3>Anda Chatpate</h3><div class="price">Rs. 160</div></div></div>
+
+<!-- DRINKS -->
+<div class="menu-item"><img src="images/hot lemon.jpg"><div class="menu-content"><h3>Hot Lemon</h3><div class="price">Rs. 60</div></div></div>
+<div class="menu-item"><img src="images/hot lemon with honey.webp"><div class="menu-content"><h3>Hot Lemon with Honey & Ginger</h3><div class="price">Rs. 100</div></div></div>
+
+<!-- HOOKAH -->
+<div class="menu-item"><img src="images/cloud hookoa.jpg"><div class="menu-content"><h3>Cloud Hookah</h3><div class="price">Rs. 450</div></div></div>
+
+</div>
+</section>
+
+<section id="about" class="section">
+<h2>About Us</h2>
+<p>Love cafe and Restaurant is known for delicious food, friendly service and a comfortable family environment.</p>
+</section>
+
+<section id="reviews" class="section reviews">
+<h2>Customer Reviews</h2>
+<div class="review">⭐ ⭐ ⭐ ⭐ Nice atmosphere and tasty food.</div>
+<div class="review">⭐ ⭐ ⭐ ⭐ Great momos and Services.</div>
+</section>
+
+<section id="contact" class="map">
+<h2>Find Us</h2>
+<iframe src="https://maps.google.com/maps?q=kapilvastu&t=&z=13&output=embed"></iframe>
+</section>
+
+<a class="whatsapp" href="https://wa.me/9806977487">Order Now</a>
+
+<footer>
+<h3>Love cafe and Restaurant</h3>
+<p>Kapilvastu, Nepal</p>
+<p>Phone: 9806977487</p>
+</footer>
+
+</body>
+</html>
